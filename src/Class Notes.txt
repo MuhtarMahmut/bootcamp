@@ -1,0 +1,126 @@
+Java Bootcamp
+
+	Review Topics:
+		1. Primitives
+		2. Wrapper class
+		3. String
+		4. String vs StringBuilder vs StringBuffer
+		5. Loops: for & while
+		6. Array
+		7. for each loop
+		8. Custom Methods
+		9. Method Overloading
+		10. Constructor
+		11. Class & Objects
+		12. Static vs Instance
+		13. Import Statements
+		14. Access Modifiers
+		15. OOP Encapsulations
+		16. OOP Inheritance
+		17. Method Overriding
+		18. Final keyword
+		19. OOP Abstraction
+		20. Abstract Class vs Interface
+		21. OOP Polymorphism
+		22. Reference Type Castings: Upcasting vs DownCasting
+		23. Exceptions: checked & unchecked
+		24. Exception Handlings
+		25. final vs finally vs finalize
+		26. garbage collection & garbage collector
+		27. Collections: List, Set
+		28. Iterable & Iterator
+		29. Maps
+
+		30. Leveraging AI for interviews
+
+
+Primitves: int, double, char, boolean
+
+	DataType var
+
+
+Wrapper Classes: Object types of primitives
+				Integer, Double...
+
+
+
+Sequence of characters: String, StringBuilder, StringBuffer
+
+		String: Immutable
+
+		StringBuilder: Mutable
+
+		StringBuffer: Mutable, Synchronized
+
+
+Loop: Repeated Actions
+
+	for loop: Number of iteration is fixed
+
+	while loop: Number of iteration is unknown
+
+		while(resultSet.hasNext){
+			getTheData
+		}
+
+	Barnching statements: break & continue
+
+		break: exits the loop
+
+		continue: skips the iteration
+
+
+Arrays: Data Structure
+	Size is fixed.
+	Faster
+	Supports any data type
+	Can be multidimensional
+
+For Each loop: ONLY works with data structures
+	The number of iterations and order are fixed
+
+
+
+Methods: Set of instructions that can perform a task
+
+	Improves the reusability, maintainability, reduces the duplications of our code
+
+
+Method overloading: Multiple methods having the same name
+
+				Parameters MUST be different
+
+Constructor:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
