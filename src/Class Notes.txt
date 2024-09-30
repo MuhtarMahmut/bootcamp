@@ -42,6 +42,8 @@ Primitves: int, double, char, boolean
 Wrapper Classes: Object types of primitives
 				Integer, Double...
 
+
+
 Sequence of characters: String, StringBuilder, StringBuffer
 
 		String: Immutable
@@ -88,32 +90,183 @@ Method overloading: Multiple methods having the same name
 
 				Parameters MUST be different
 
-Constructor:
+Constructor: Used for creating objects.
+		executed when we create thne object
 
 
-come back at 11:40 am EST
+Class & Object:
+
+		Object: instance of class. each object has its own memory
+
+		class: blueprint/template of object. No memory is allocating for the classes
+
+
+Static vs Instance
+
+	Instance: belongs to the object and each object has its own instance
+
+	static: belongs to the class. All objects will share the same copy
+
+
+Import statements:
+
+		regular import:
+			import.package.class;
+
+		static import:
+			import static package.class.member;
 
 
 
+Access Modifiers: 4 access modifiers
+
+	private < default < protected < public
+
+	private: only visible within same class
+
+	default: only visible within same package
+
+	protected: Alwasys visible within same package
+				also visible outside the package to the sub class
+
+	public: always visible
 
 
 
+OOP Encapsulations: hiding data by declaring them private
+
+					use public getters/setters methods to read/write the data
+
+					Gives us full control over the data
+
+
+			In my framework, I used it in POJO classes
+							created multiple variables private
+							generated getters & setters
 
 
 
+OOP Inheritance: Building IS A relationships among the classes (parent/child)
+
+		extends
+		implments
+
+		child class: can inherit all the visible variables and methods
+					Constructors can not be inherited
+
+		parent class: does not inherit anything. ONLY CONTAINS THE COMMON FEATURES OF ALL CHILD CLASSES
+
+		In my framework:
+
+			BasePage:
+				public BasePage(){
+					PageFactory.initElements(driver, this);
+				}
+
+
+			LoginPage extends Basepage
+				public LoginPage(){
+					super()
+				}
+
+			HomePage extends BasePage
 
 
 
+Method Overriding: giving different implementations to the method
+
+		MUST happen in sub class(es)
+
+		Method name, return type, and parameters MUST be same
+
+		Access modifier needs to be same ore more visible
+
+		can not override: private, static and final methods
+
+
+		toString()
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.get();
 
 
 
+Final keyword: unchangable
+
+	class: Can not be inherited
+
+	methods: can not be overrided
+
+	variables: can not be re-assigned
 
 
 
+OOP Abstraction: Hiding the implementation details
+
+				Ignore the small details, and focus on essentials
+
+
+			Abstract class: can not create objects from it. it's meant to be parent class
+
+					BasePage
+
+					TestBase
+
+
+			Interface: for providing additional methods
+
+				JavaScripExecuter
+				TakeScreenShot
+				WebDriver
+
+				List
+				Set
+
+				Connection
+				Statement
+				ResultSet
+
+
+OOP Polymorphism: Many forms. parent breferences to child objects
+
+
+	WebDriver getDriver(){
+		... return chrome;
+
+		... return firefox;
+
+		... return safari;
+
+		... return Edge;
+	}
+
+
+Reference Type Castings: casting one reference type to another. (Inheritance is a MUST)
+
+	Upcasting: casting smaller to larger (automatically done)
+
+	downcasting: casting larger type to smaller
+
+	WebDriver driver = new EdgeDriver();
+
+	((TakeScreenshot)driver).takeScreenShot();
 
 
 
+Exceptions: Issues within the code
 
+	checked: Compile time exception
+
+	unchecked: Runtime exceptions
+
+
+Exception Handlings:
+
+		1. Try & catch: used for handling both checked and unchecked exceptions
+
+
+		2. throws: can only be used in method signature for checked exceptions
 
 
 
