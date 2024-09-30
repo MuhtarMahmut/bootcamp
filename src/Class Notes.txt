@@ -269,6 +269,90 @@ Exception Handlings:
 		2. throws: can only be used in method signature for checked exceptions
 
 
+final vs finally vs finalize:
+
+	final: keyword. used for restricting class, variables and methods
+
+	finally: block. can be used with try & catch
+
+	finalize: method. used by garbage collector to clear the unreferenced objects
+
+
+
+garbage collection & garbage collector:
+
+		Grabage Collection: Collection of unreferenced objects
+
+		Garbage collector: process of removing the objects that are eligible for garbage collection
+
+
+
+Collection: dynamic sized
+			only supports non-primitives
+
+		List: Allows Duplicates, Has index, ordered
+
+			ArrayList: Faster in retriving the element
+
+
+		Set: Does not allow Duplicates. does not have index
+
+			HashSet: Faster in retriving the element.
+
+
+	LIFO: Stack
+	FIFO: Queue
+
+Iterable & Iterator: used for removing objects of a collection while looping through the colection
+
+		hasNext()
+		next()
+		remove()
+
+		Iterator it = colklection.iterator()
+
+		while(it.hasNext){
+			if(it.next() > 100){
+				it.remove();
+			}
+		}
+
+		--------------------------------------------------------
+
+		collection.removeIf( p -> p > 100);
+
+
+Map: collection of pairs (Key & Value)
+	dynamic sized
+	only supports non-primitives
+	Key must be unique
+
+	HashMap: fastest. random ordered
+
+
+	Properties File =====> key=value
+
+	JSON Body
+	List<Map>
+
+
+	DB ====> firstName=Josh, age=30
+	List<Map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
